@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# copy-photos-by-number
+#
+# Takes picture numbers as arguments and copies them from $locationfrom to $locationto
+# eg. "copy-photos-by-number 1234 1235" will copy "/home/masa/Pictures/CAMERA_1234.JPG" to "/media/masa/usb-stick/CAMERA_1234.JPG" and "/home/masa/Pictures/CAMERA_1235.JPG" to "/media/masa/usb-stick/CAMERA_1235.JPG", respectively
+
+# locationfrom - where the pictures are
+locationfrom="/home/masa/Pictures/"
+
+# locationto - where you want the pictures to get copied to
+locationto="/media/masa/usb-stick/"
+
+# prefix - your camera's filename prefix
+prefix="CAMERA_"
+
+# extension - filename extension
+extension=".JPG"
+
+for number in $*
+do
+	cp "$locationfrom""$prefix""$number""$extension" "$locationto" &&
+	echo Copied "$prefix""$number""$extension" to "$locationto"
+done
