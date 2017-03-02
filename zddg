@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# zddg
+#
+# Shows a zenity text entry dialog for quickly making ddg queries
+# You should use it together with a keyboard shortcut
+
+# You can switch firefox to another browser
+firefox https://duckduckgo.com/?q="$(zenity --entry)"

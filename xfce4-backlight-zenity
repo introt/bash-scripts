@@ -2,7 +2,7 @@
 
 # xfce4-backlight-zenity
 #
-# Shows a text entry dialog for setting desired backlight brightness.
+# Shows a text entry dialog for setting desired backlight brightness
 # You should use it together with a keyboard shortcut
 
 pkexec /usr/sbin/xfpm-power-backlight-helper --set-brightness $(zenity --entry)
