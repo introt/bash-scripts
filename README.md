@@ -7,6 +7,9 @@ Takes picture numbers as arguments and copies them from $locationfrom to $locati
 ### @ and c@
 @ echos all arguments into $HOME/Documents/@notetoself and adds a time stamp. Usefull for saving links, one-liners and short notes from terminal. c@ opens the file with less
 
+### xyzzy
+A must-have for all 'adventure' fans
+
 ## Keyboard shortcuts
 You should bind these to some keyboard shortcuts
 
