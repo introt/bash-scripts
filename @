@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "The following was added on $(date)" >> $HOME/Documents/@notetoself
+echo $* >> $HOME/Documents/@notetoself
+echo "" >> $HOME/Documents/@notetoself
