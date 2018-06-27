@@ -5,7 +5,7 @@ Bash scripts and one-liners
 Takes picture numbers as arguments and copies them from $locationfrom to $locationto. Tweak it to suit your needs!
 
 ### @ and c@
-@ echos all arguments into $HOME/Documents/@notetoself and adds a time stamp. Usefull for saving links, one-liners and short notes from terminal. c@ opens the file with less
+@ echos all arguments into $HOME/Documents/@notetoself and adds a time stamp. Usefull for saving links, one-liners and short notes from terminal. If no arguments are supplied,c@ opens the file with less. Giving any argument greps the file and all arguments are passed to grep.
 
 ### xyzzy
 A must-have for all 'adventure' fans
