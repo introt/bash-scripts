@@ -1,3 +1,10 @@
 #!/bin/bash
 
-less $HOME/Documents/@notetoself
+NOTES="$HOME/Documents/@notetoself"
+
+if [ $# -eq 0 ]
+then
+	less "$NOTES"
+else
+	grep $* "$NOTES"
+fi
